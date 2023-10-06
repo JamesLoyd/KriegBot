@@ -22,11 +22,11 @@ Kreig is split up into two parts
 These talk to each other via a GRPC connection, this allows the API to handle incoming webhooks from integrations like github
 The bot itself is generally setup to connect to each platform via one method. A list of the known types, planned and current are below.
 
-### Websocket
+#### Websocket
 * Discord
 * Slack
 
-### API
+#### API
 * Slack (planned for the future)
 
 ## On Datastore's

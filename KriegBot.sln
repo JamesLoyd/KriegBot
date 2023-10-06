@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KriegBot.Crux", "KriegBot.Crux\KriegBot.Crux.csproj", "{36AB9EA1-454C-419B-A8B3-E1BD98C5E029}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KriegBot.ModuleDefinition", "KriegBot.ModuleDefinition\KriegBot.ModuleDefinition.csproj", "{0E8AF98C-F897-4F15-A11D-34E7FD6CD41F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KriegBot.Common", "KriegBot.Common\KriegBot.Common.csproj", "{32F28CBE-9C68-442B-8D0F-C9CA1834F5B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KriegBot.Data", "KriegBot.Data\KriegBot.Data.csproj", "{207F56E7-0839-4A00-9942-974719AC89EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{037D32D8-08B5-462E-BA57-7E51CFF3A895}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module.DevFlow", "Modules\Module.DevFlow\Module.DevFlow.csproj", "{2C956E65-4EEE-4328-80E8-548629D2AE71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KriegBot.Slack", "KriegBot.Slack\KriegBot.Slack.csproj", "{6B2EBFB0-D05E-42E4-A074-A4040B50ABDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KriegBot.API", "KriegBot.API\KriegBot.API.csproj", "{05DFE8E8-8C64-469B-B364-FE9D20E4C77D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36AB9EA1-454C-419B-A8B3-E1BD98C5E029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36AB9EA1-454C-419B-A8B3-E1BD98C5E029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36AB9EA1-454C-419B-A8B3-E1BD98C5E029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36AB9EA1-454C-419B-A8B3-E1BD98C5E029}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E8AF98C-F897-4F15-A11D-34E7FD6CD41F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E8AF98C-F897-4F15-A11D-34E7FD6CD41F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E8AF98C-F897-4F15-A11D-34E7FD6CD41F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E8AF98C-F897-4F15-A11D-34E7FD6CD41F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32F28CBE-9C68-442B-8D0F-C9CA1834F5B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32F28CBE-9C68-442B-8D0F-C9CA1834F5B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32F28CBE-9C68-442B-8D0F-C9CA1834F5B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32F28CBE-9C68-442B-8D0F-C9CA1834F5B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{207F56E7-0839-4A00-9942-974719AC89EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{207F56E7-0839-4A00-9942-974719AC89EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{207F56E7-0839-4A00-9942-974719AC89EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{207F56E7-0839-4A00-9942-974719AC89EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C956E65-4EEE-4328-80E8-548629D2AE71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C956E65-4EEE-4328-80E8-548629D2AE71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C956E65-4EEE-4328-80E8-548629D2AE71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C956E65-4EEE-4328-80E8-548629D2AE71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B2EBFB0-D05E-42E4-A074-A4040B50ABDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B2EBFB0-D05E-42E4-A074-A4040B50ABDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B2EBFB0-D05E-42E4-A074-A4040B50ABDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B2EBFB0-D05E-42E4-A074-A4040B50ABDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05DFE8E8-8C64-469B-B364-FE9D20E4C77D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05DFE8E8-8C64-469B-B364-FE9D20E4C77D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05DFE8E8-8C64-469B-B364-FE9D20E4C77D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05DFE8E8-8C64-469B-B364-FE9D20E4C77D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2C956E65-4EEE-4328-80E8-548629D2AE71} = {037D32D8-08B5-462E-BA57-7E51CFF3A895}
+	EndGlobalSection
+EndGlobal

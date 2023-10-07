@@ -14,7 +14,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<WebhookEventProcessor, WebhookProcessor>();
-
+builder.Services.AddGrpc();
 
 var app = builder.Build();
 

@@ -7,6 +7,7 @@ namespace KriegBot.API.Controllers;
 public class GithubController : ControllerBase
 {
     
+    [HttpPost]
     public IActionResult Post(GithubWebhook.GhWebhook webhook)
     {
         Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(webhook.PayloadObject));

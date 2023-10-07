@@ -10,6 +10,6 @@ public sealed class WebhookProcessor : WebhookEventProcessor
     {
         
         return Task.Run(() => { Console.WriteLine(
-            $"Hello there, this event was raised by {pullRequestEvent.Sender.Name} username? {pullRequestEvent.Sender.Login} action? {Newtonsoft.Json.JsonConvert.SerializeObject(action)}"); });
+            $"Hello there, this event was raised by {pullRequestEvent.Sender.Name} username? {pullRequestEvent.Sender.Login} action? {Newtonsoft.Json.JsonConvert.SerializeObject(pullRequestEvent)}"); });
     }
 }

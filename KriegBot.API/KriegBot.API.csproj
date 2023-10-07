@@ -7,10 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GithubWebhook" Version="1.1.0" />
     <PackageReference Include="Grpc" Version="2.46.6" />
     <PackageReference Include="Octokit.Webhooks" Version="2.0.3" />
+    <PackageReference Include="Octokit.Webhooks.AspNetCore" Version="2.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>

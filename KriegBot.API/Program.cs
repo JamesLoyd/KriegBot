@@ -1,3 +1,7 @@
+using KriegBot.API.Github;
+using Octokit.Webhooks;
+using Octokit.Webhooks.AspNetCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,7 +11,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
 var app = builder.Build();
+
+builder.Services.AddSingleton<WebhookEventProcessor, WebhookProcessor>();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -16,6 +24,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapGitHubWebhooks();
+});
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

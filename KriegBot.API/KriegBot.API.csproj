@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <PackageReference Include="Grpc" Version="2.46.6" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.57.0" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.57.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Octokit.Webhooks" Version="2.0.3" />
     <PackageReference Include="Octokit.Webhooks.AspNetCore" Version="2.0.3" />
@@ -16,6 +18,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\KriegBot.Common\KriegBot.Common.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Protobuf Include="Protos\botMessage.proto" GrpcServices="Server" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "KriegBot.API.GRPC";
+
+package botcommunicationservice;
+
+service BotCommunication {
+  rpc SendMessage (Message) returns (MessageReply);
+}
+
+message Message {
+    string name = 1;
+    string payload = 2;
+}
+
+message MessageReply {
+  string message = 1;
+}

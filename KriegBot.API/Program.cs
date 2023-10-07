@@ -3,6 +3,7 @@ using KriegBot.API.Github;
 using KriegBot.Common;
 using Octokit.Webhooks;
 using Octokit.Webhooks.AspNetCore;
+using Grpc.Net.Client;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,6 +35,11 @@ app.UseEndpoints(endpoints =>
 {
     endpoints.MapGitHubWebhooks(path: "/api/github",  EnvironmentHelper.GetEnviromentVariableValue(Constants.EnvironmentVariableNames.GithubWebhookSecret));
 });
+
+
+app.MapGrpcService<BotCommunicationService>();
+app.MapGet("/", () => "Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909");
+
 
 app.MapControllers();
 

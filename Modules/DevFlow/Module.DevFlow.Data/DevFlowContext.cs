@@ -1,17 +1,21 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using KriegBot.Common;
+using Microsoft.EntityFrameworkCore;
 using Module.DevFlow.Data.Entities;
 
 namespace Module.DevFlow.Data;
 
-public class DevFlowContext: DbContext
+public class DevFlowContext: KriegDataContext
 {
     public DbSet<RepoEntity> Repo { get; set; }
     public DbSet<UserEntity> User { get; set; }
     
     public string DbPath { get; }
+    public override string Context { get; }
+
 
     public DevFlowContext()
     {
+        Context = "DevFlow";
         var folder = Environment.SpecialFolder.LocalApplicationData;
         var path = Environment.GetFolderPath(folder)+"/krieg/";
         if (!System.IO.Directory.Exists(path))

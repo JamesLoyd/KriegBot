@@ -1,17 +1,20 @@
+using KriegBot.Common;
 using KriegBot.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace KriegBot.Data;
 
-public class KriegContext : DbContext
+public class KriegContext : KriegDataContext
 {
     public DbSet<ChannelEntity> Channel { get; set; }
     public DbSet<PinsEntity> Pin { get; set; }
     public DbSet<PlatformEntity> Platform { get; set; }
     public string DbPath { get; }
+    public override string Context { get; }
 
     public KriegContext()
     {
+        Context = "Krieg";
         var folder = Environment.SpecialFolder.LocalApplicationData;
         var path = Environment.GetFolderPath(folder)+"/krieg/";
         if (!System.IO.Directory.Exists(path))

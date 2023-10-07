@@ -57,3 +57,6 @@ a top priority of mine at the moment.
 
 If you notice anything that you would like to improve, you are free to branch off of mainline and open up a PR. This is entirely up to you.
 As always, you can fork this, derive from this, use it as you see fit, all that is required is to abide by the MIT License. I make no extra demands past the license.
+
+## Building
+Some stuff will go here, this is just to test pull request events

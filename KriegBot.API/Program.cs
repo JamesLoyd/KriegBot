@@ -29,11 +29,12 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapControllers();
 
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapGitHubWebhooks(path: "/api/github");
 });
+
+app.MapControllers();
 
 app.Run();

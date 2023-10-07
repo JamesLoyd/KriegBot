@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KriegBot.API.Controllers;
 
 [ApiController]
 [Route("/api/[controller]")]
+[AllowAnonymous]
 public class GithubController : ControllerBase
 {
     

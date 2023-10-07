@@ -13,6 +13,14 @@ Discord functionality is a bit broken and incompatible with slack's dealio. This
 ## License
 To see what you can do under the MIT License, you can check it out [here](https://github.com/JamesLoyd/KriegBot/blob/mainline/LICENSE).
 
+## Environment Variables 
+Environment variables are used to hide crucial tokens for Slack, Discord, and Github.
+
+```
+KRIEGBOT_SLACK_TOKEN="some token"
+KRIEGBOT_GITHUB_TOKEN="some token"
+```
+
 ## Structure
 Kreig is split up into two parts
 

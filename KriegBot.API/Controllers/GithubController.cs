@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace KriegBot.API.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("/api/[controller]")]
 public class GithubController : ControllerBase
 {
     

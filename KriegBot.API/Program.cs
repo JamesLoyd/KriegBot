@@ -30,9 +30,6 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-Console.WriteLine(
-    $"Using value:{EnvironmentHelper.GetEnviromentVariableValue(Constants.EnvironmentVariableNames.GithubWebhookSecret)}");
-
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapGitHubWebhooks(path: "/api/github",  EnvironmentHelper.GetEnviromentVariableValue(Constants.EnvironmentVariableNames.GithubWebhookSecret));

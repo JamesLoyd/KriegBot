@@ -12,7 +12,7 @@ public class GithubController : ControllerBase
     [HttpPost]
     public IActionResult Post(GithubWebhook.GhWebhook webhook)
     {
-        Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(webhook.PayloadObject));
+        Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(webhook));
         if (webhook.Event == GithubWebhook.Events.PullRequestEvent.EventString)
         {
             Console.WriteLine("That's a cool pull request");

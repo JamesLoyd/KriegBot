@@ -12,4 +12,15 @@
       <PackageReference Include="SlackNet" Version="0.11.3" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Protobuf Include="Protos\botMessage.proto">
+        <GrpcServices>Client</GrpcServices>
+        <Access>Public</Access>
+        <ProtoCompile>True</ProtoCompile>
+        <CompileOutputs>True</CompileOutputs>
+        <OutputDir>obj\Debug/net6.0/</OutputDir>
+        <Generator>MSBuild:Compile</Generator>
+      </Protobuf>
+    </ItemGroup>
+
 </Project>

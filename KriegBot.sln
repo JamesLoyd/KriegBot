@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module.DevFlow", "Modules\D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module.DevFlow.Data", "Modules\DevFlow\Module.DevFlow.Data\Module.DevFlow.Data.csproj", "{9373FE2D-6770-45C8-B2BD-1190CDA7F445}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KriegBot.Slack", "KriegBot.Slack\KriegBot.Slack.csproj", "{8EE4C826-CFF9-4785-9A3A-4288DCFD245C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,10 @@ Global
 		{9373FE2D-6770-45C8-B2BD-1190CDA7F445}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9373FE2D-6770-45C8-B2BD-1190CDA7F445}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9373FE2D-6770-45C8-B2BD-1190CDA7F445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EE4C826-CFF9-4785-9A3A-4288DCFD245C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE4C826-CFF9-4785-9A3A-4288DCFD245C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE4C826-CFF9-4785-9A3A-4288DCFD245C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE4C826-CFF9-4785-9A3A-4288DCFD245C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FB1A4B28-07D1-4614-8825-771AD0E48176} = {037D32D8-08B5-462E-BA57-7E51CFF3A895}

@@ -21,7 +21,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Protobuf Include="Protos\botMessage.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\botMessage.proto" GrpcServices="Client" />
   </ItemGroup>
 
 </Project>

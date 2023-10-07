@@ -14,7 +14,7 @@
 
     <ItemGroup>
       <Protobuf Include="Protos\botMessage.proto">
-        <GrpcServices>Client</GrpcServices>
+        <GrpcServices>Service</GrpcServices>
         <Access>Public</Access>
         <ProtoCompile>True</ProtoCompile>
         <CompileOutputs>True</CompileOutputs>

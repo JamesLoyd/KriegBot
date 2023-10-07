@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-option csharp_namespace = "KriegBot.API.GRPC";
+option csharp_namespace = "KriegBot.Slack.GRPC";
 
-package botcommunicationservice;
+package BotCommunication;
 
 service BotCommunication {
   rpc SendMessage (Message) returns (MessageReply);

@@ -1,16 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Module.DevFlow.Data.Entities;
+using KriegBot.Data.Entities;
+using Microsoft.EntityFrameworkCore;
 
-namespace Module.DevFlow.Data;
+namespace KriegBot.Data;
 
-public class DevFlowContext: DbContext
+public class KriegContext : DbContext
 {
-    public DbSet<RepoEntity> Repo { get; set; }
-    public DbSet<UserEntity> User { get; set; }
-    
+    public DbSet<ChannelEntity> Channel { get; set; }
+    public DbSet<PinsEntity> Pin { get; set; }
+    public DbSet<PlatformEntity> Platform { get; set; }
     public string DbPath { get; }
 
-    public DevFlowContext()
+    public KriegContext()
     {
         var folder = Environment.SpecialFolder.LocalApplicationData;
         var path = Environment.GetFolderPath(folder)+"/krieg/";
@@ -18,7 +18,7 @@ public class DevFlowContext: DbContext
         {
             System.IO.Directory.CreateDirectory(path);
         }
-        DbPath = System.IO.Path.Join(path, "DevFlow.db");
+        DbPath = System.IO.Path.Join(path, "Krieg.db");
     }
 
     // The following configures EF to create a Sqlite database file in the

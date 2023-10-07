@@ -1,4 +1,6 @@
+using KriegBot.API;
 using KriegBot.API.Github;
+using KriegBot.Common;
 using Octokit.Webhooks;
 using Octokit.Webhooks.AspNetCore;
 
@@ -31,7 +33,7 @@ app.UseAuthorization();
 
 app.UseEndpoints(endpoints =>
 {
-    endpoints.MapGitHubWebhooks(path: "/api/github");
+    endpoints.MapGitHubWebhooks(path: "/api/github",  EnvironmentHelper.GetEnviromentVariableValue(Constants.EnvironmentVariableNames.GithubWebhookSecret));
 });
 
 app.MapControllers();

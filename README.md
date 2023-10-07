@@ -23,6 +23,11 @@ KRIEGBOT_SLACK_TOKEN="some token"
 KRIEGBOT_GITHUB_TOKEN="some token"
 ```
 
+#### Webhook Environment Variables
+```
+KRIEGBOT_GITHUB_WEBHOOK_SECRET="some secret"
+```
+
 ## Structure
 Kreig is split up into two parts
 

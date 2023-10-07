@@ -1,5 +1,4 @@
 using Grpc.Core;
-using KriegBot.API.GRPC;
 
 namespace KriegBot.API;
 

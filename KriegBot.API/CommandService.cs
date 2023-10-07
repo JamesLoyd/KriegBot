@@ -1,5 +1,4 @@
 using Grpc.Net.Client;
-using KriegBot.API.GRPC;
 using KriegBot.Slack.GRPC;
 
 namespace KriegBot.API;

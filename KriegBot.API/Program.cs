@@ -26,7 +26,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseEndpoints(endpoints =>
 {
-    endpoints.MapGitHubWebhooks();
+    endpoints.MapGitHubWebhooks(path: "/api/github");
 });
 app.UseHttpsRedirection();
 

@@ -9,7 +9,6 @@
   <ItemGroup>
     <PackageReference Include="GithubWebhook" Version="1.1.0" />
     <PackageReference Include="Grpc" Version="2.46.6" />
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.11" />
     <PackageReference Include="Octokit.Webhooks" Version="2.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>

@@ -6,8 +6,14 @@ namespace KriegBot.API.Controllers;
 [Route("api/[controller]")]
 public class GithubController : ControllerBase
 {
-    public IActionResult Post()
+    
+    public IActionResult Post(GithubWebhook.GhWebhook webhook)
     {
+        Console.WriteLine(webhook.PayloadObject);
+        if (webhook.Event == GithubWebhook.Events.PullRequestReviewEvent.EventString)
+        {
+            Console.WriteLine("That's a cool pull request");
+        }
         return Ok();
     }
 }

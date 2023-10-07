@@ -23,7 +23,7 @@ These talk to each other via a GRPC connection, this allows the API to handle in
 The bot itself is generally setup to connect to each platform via one method. A list of the known types, planned and current are below.
 
 #### Websocket
-* Discord
+* Discord (planned for the future)
 * Slack
 
 #### API

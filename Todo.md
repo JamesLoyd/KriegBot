@@ -5,6 +5,8 @@
   - Figure out dynamic loading of DLLS, this will make this easier
 - Setup flow from grpc to modules
 - Load module routing in based on name, so it will htit the right module
+- Connect to slack and route commands correctly
+- finish channel implementation this is really handled by everything else, I need to do
 
 
 ### Module : Devflow specific

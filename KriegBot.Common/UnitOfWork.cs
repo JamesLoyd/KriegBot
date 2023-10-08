@@ -7,7 +7,7 @@ namespace KriegBot.Common;
 public interface IUnitOfWork : IDisposable
 {
     IQueryable<TDomain> Set<TDomain>(string contextName) where TDomain : BaseEntity;
-    void SaveChanges(string contextName);
+    Task SaveChangesAsync(string contextName);
     void Add<TDomain>(TDomain entity, string contextName) where TDomain : BaseEntity;
     TDomain Get<TDomain>(int id, string contextName) where TDomain : BaseEntity;
     void Delete<TDomain>(int id, string contextName) where TDomain : BaseEntity;
@@ -16,7 +16,6 @@ public interface IUnitOfWork : IDisposable
 
 public class UnitOfWork : IUnitOfWork
 {
-    //TODO Handle multiple contexts
     private readonly IEnumerable<KriegDataContext> _contexts;
     public UnitOfWork(IEnumerable<KriegDataContext> contexts)
     {
@@ -34,11 +33,10 @@ public class UnitOfWork : IUnitOfWork
         return context.Set<TDomain>();
     }
 
-    public void SaveChanges(string contextName)
+    public async Task SaveChangesAsync(string contextName)
     {
-        //TODO maybe make this async?
         var context = GetContext(contextName);
-        context.SaveChanges();
+        await context.SaveChangesAsync();
     }
 
     public void Add<TDomain>(TDomain entity, string contextName) where TDomain : BaseEntity
